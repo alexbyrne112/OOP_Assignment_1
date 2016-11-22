@@ -3,10 +3,11 @@ void setup()
   fullScreen();
   background(0);
   space = loadImage("assignment_background.jpg");
+  //smooth(4);
   
   a = new Cockpit(); 
   
- radars.add(new Radar(110, 110, 100, 0.02f));
+ radars.add(new Radar(110, 110, 100, 0.07f));
 }
 PImage space;
 Cockpit a;
