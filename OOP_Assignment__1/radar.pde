@@ -15,4 +15,13 @@ class Radar
    this.speed = speed;
   }
   
+  void update()
+  {
+    
+  }
+  
+  void render()
+  {
+    
+  }
 }

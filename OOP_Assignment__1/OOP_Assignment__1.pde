@@ -5,9 +5,13 @@ void setup()
   space = loadImage("assignment_background.jpg");
   
   a = new Cockpit(); 
+  
+  radars.add(new Radar());
 }
 PImage space;
 Cockpit a;
+
+ArrayList<Radar> radars = new ArrayList<Radar>();
 
 void draw()
 {
