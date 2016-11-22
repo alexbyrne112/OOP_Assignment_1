@@ -6,7 +6,7 @@ void setup()
   
   a = new Cockpit(); 
   
- // radars.add(new Radar());
+ radars.add(new Radar(110, 110, 100, 0.02f));
 }
 PImage space;
 Cockpit a;
@@ -17,5 +17,11 @@ void draw()
 {
   image(space,0, 0,width,height);
   a.display();
-
+  
+   for(Radar r:radars)
+  {
+    r.update();
+    r.render();
+  }
+  
 }
