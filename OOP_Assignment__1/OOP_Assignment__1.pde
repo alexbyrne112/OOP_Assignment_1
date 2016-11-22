@@ -6,7 +6,7 @@ void setup()
   
   a = new Cockpit(); 
   
-  radars.add(new Radar());
+ // radars.add(new Radar());
 }
 PImage space;
 Cockpit a;
