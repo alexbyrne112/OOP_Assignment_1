@@ -12,12 +12,20 @@ void setup()
   f = new Fuel();
   
  radars.add(new Radar(110, 110, 100,0.07f));
+ 
+  //c1 = color(255, 235,0);
+  //c2 = color(130, 36,36);
 }
 PImage space;
 Cockpit a;
 Fuel f;
 
 PFont font;
+
+//int Y_AXIS = 1;
+//int X_AXIS = 2;
+//color c1, c2;
+
 
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();
@@ -28,7 +36,8 @@ void draw()
   a.display();
   f.update();
   f.render();
-
+  //setGradient(50, 90, 540, 80, c1, c2, Y_AXIS);
+  //setGradient(50, 190, 540, 80, c2, c1, X_AXIS);
   
    for(Radar r:radars)
   {
