@@ -3,7 +3,11 @@ class Fuel
   float x = width - 350;
 
   void render()
-  {
+  { 
+    textFont(font);
+    textSize(40);
+    fill(255);
+    text(((int)(map(x,350,width-350,0, 100))) + "%", x-10, 100 - 30);
     if(x > 350)
     {
       x = x - 1;

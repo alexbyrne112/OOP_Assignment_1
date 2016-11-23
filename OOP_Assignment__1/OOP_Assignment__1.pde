@@ -6,7 +6,7 @@ void setup()
   space = loadImage("assignment_background.jpg");
   smooth(4);
   
-  //font = loadFont("SimpleTechBold02-48.vlw");
+  font = loadFont("SimpleTechBold02-48.vlw");
   
   a = new Cockpit(); 
   f = new Fuel();
