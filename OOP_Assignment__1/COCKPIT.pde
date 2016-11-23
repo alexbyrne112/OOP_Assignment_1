@@ -3,7 +3,7 @@ class Cockpit
    
   void display()
   {
-    
+  strokeWeight(1);  
   fill(60);
   stroke(255);
   rect(width-1, height,-width+1,-250,20,20,1,1);

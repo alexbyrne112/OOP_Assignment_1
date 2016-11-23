@@ -4,7 +4,7 @@ class Radar
   float speed = 0.01;
   float theta = 0;
   int trailLength = 50;
-  float cx,cy;
+  float cx, cy;
   
   Radar(float x, float y, float radius, float speed)
   {
@@ -36,7 +36,9 @@ class Radar
     
     stroke(0, 255, 0);
     noFill();
+    strokeWeight(3);
     ellipse(cx, cy, radius * 2.01, radius * 2.01);
+    strokeWeight(1);
     ellipse(cx, cy, radius * 1.4, radius * 1.4);
     ellipse(cx, cy, radius * 0.8, radius * 0.8 );
     ellipse(cx, cy, radius * 0.3, radius * 0.3);
