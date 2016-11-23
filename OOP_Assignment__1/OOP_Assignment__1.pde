@@ -6,6 +6,8 @@ void setup()
   space = loadImage("assignment_background.jpg");
   smooth(4);
   
+  //font = loadFont("SimpleTechBold02-48.vlw");
+  
   a = new Cockpit(); 
   f = new Fuel();
   
@@ -14,6 +16,8 @@ void setup()
 PImage space;
 Cockpit a;
 Fuel f;
+
+PFont font;
 
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();

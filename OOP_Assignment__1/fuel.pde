@@ -1,10 +1,13 @@
 class Fuel
 {
-  float x;
+  float x = width - 350;
 
   void render()
   {
-    x = width - 350;
+    if(x > 350)
+    {
+      x = x - 1;
+    }
   }
   
   void update()
