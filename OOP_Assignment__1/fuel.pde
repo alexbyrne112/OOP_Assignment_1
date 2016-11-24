@@ -2,7 +2,7 @@ class Fuel
 {
   float x = width - 350;
 
-  void render()
+  void update()
   { 
     textFont(font);
     textSize(24);
@@ -14,7 +14,7 @@ class Fuel
     }
   }
   
-  void update()
+  void render()
   {
     strokeWeight(1);
     fill(130,35,35);
@@ -24,16 +24,19 @@ class Fuel
     line(x, 75, x, 200);
   }
   
-  void setGradient(int x, int y, float w, float h, color c1, color c2, int axis ) {
-
+  //void setGradient(int x, int y, float w, float h, color c1, color c2, int axis )
+  //{
   //noFill();
 
-  //if (axis == X_AXIS) {  // Left to right gradient
-  //  for (int i = x; i <= x+w; i++) {
-  //    float inter = map(i, x, x+w, 0, 1);
-  //    color c = lerpColor(c1, c2, inter);
-  //    stroke(c);
-  //    line(i, y, i, y+h);
+  //  if (axis == X_AXIS)
+  //  {  // Left to right gradient
+  //    for (int i = x; i <= x+w; i++) 
+  //    {
+  //      float inter = map(i, x, x+w, 0, 1);
+  //      color c = lerpColor(c1, c2, inter);
+  //      stroke(c);
+  //      line(i, y, i, y+h);
+  //    }
   //  }
-  }
+  //}
 }

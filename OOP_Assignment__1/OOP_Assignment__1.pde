@@ -10,6 +10,7 @@ void setup()
   
   a = new Cockpit(); 
   f = new Fuel();
+  s = new Speedo();
   
  radars.add(new Radar(110, 110, 100,0.07f));
  
@@ -19,13 +20,12 @@ void setup()
 PImage space;
 Cockpit a;
 Fuel f;
+Speedo s;
 
 PFont font;
 
-//int Y_AXIS = 1;
 //int X_AXIS = 2;
 //color c1, c2;
-
 
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();
@@ -36,13 +36,13 @@ void draw()
   a.display();
   f.update();
   f.render();
-  //setGradient(50, 90, 540, 80, c1, c2, Y_AXIS);
+  s.render();
+
   //setGradient(50, 190, 540, 80, c2, c1, X_AXIS);
   
    for(Radar r:radars)
   {
     r.update();
     r.render();
-  }
-  
+  } 
 }
