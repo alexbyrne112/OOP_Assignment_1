@@ -1,6 +1,6 @@
 void setup()
 {
-  noCursor();
+ // noCursor();
   fullScreen();
   background(0);
   space = loadImage("assignment_background.jpg");
@@ -11,8 +11,11 @@ void setup()
   a = new Cockpit(); 
   f = new Fuel();
   s = new Speedo();
+  //radio = new Radio();
   
- radars.add(new Radar(110, 110, 100,0.07f));
+  
+  
+  radars.add(new Radar(110, 110, 100,0.07f));
  
 
 }
@@ -20,6 +23,7 @@ PImage space;
 Cockpit a;
 Fuel f;
 Speedo s;
+//Radio radio;
 
 PFont font;
 
@@ -34,6 +38,8 @@ void draw()
   f.update();
   f.render();
   s.render();
+  //radio.display();
+  //Song.play();
   
    for(Radar r:radars)
   {

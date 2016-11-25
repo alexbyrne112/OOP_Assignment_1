@@ -1,7 +1,7 @@
 class Fuel
 {
   float x = width - 350;
-  float r = 200;
+  //float r = 200;
 
   void update()
   { 
@@ -20,12 +20,12 @@ class Fuel
     strokeWeight(1);
     fill(0);
     rect(350,100,width - 700,100);
-    fill(r,35,35);
+    fill(150,35,35);
     rect(350,100,x - 350,100);
     strokeWeight(4);
     stroke(255);
     line(x, 75, x, 200);
-    r -= 0.05;
+    //r -= 0.05;
     
   }
 }

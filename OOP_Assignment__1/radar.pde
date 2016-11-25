@@ -36,7 +36,7 @@ class Radar
     
     stroke(0, 255, 0);
     noFill();
-    strokeWeight(3);
+    strokeWeight(4);
     ellipse(cx, cy, radius * 2.01, radius * 2.01);
     strokeWeight(1);
     ellipse(cx, cy, radius * 1.4, radius * 1.4);
