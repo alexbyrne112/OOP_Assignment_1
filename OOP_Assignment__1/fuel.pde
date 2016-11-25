@@ -13,8 +13,7 @@ class Fuel
     }
   } 
   void render()
-  {
-    
+  { 
     strokeWeight(1);
     fill(0);
     rect(350,100,width - 700,100);
@@ -23,9 +22,12 @@ class Fuel
     strokeWeight(4);
     stroke(255);
     line(x, 75, x, 200);
+    fill(0);
+    textSize(60);
+    text("FUEL",width / 2 - 140, 180);
     fill(255);
     textSize(60);
     text("FUEL",width / 2 - 130, 170);
+    
   }
-  
 }
