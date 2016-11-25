@@ -22,8 +22,9 @@ class Radio
     {
       if(mousePressed == true && count == 0)
       {
+        Song.play();
         count += 1;
-       Song.play();
+        Song.rewind();
       }
       else if(mousePressed == true && count == 1)
       {
@@ -35,8 +36,18 @@ class Radio
       if(count == 0)
       {
         noFill();
+        strokeWeight(3);
         stroke(255,0,0);
         arc(b1.x + 65, b1.y + 65, 50, 50, radians(290), radians(610)); 
+        line(b1.x + 65,b1.y +53,b1.x + 65, b1.y +32);
+      }
+      else if(count == 1)
+      {
+        noFill();
+        strokeWeight(3);
+        stroke(5,230,255);
+        arc(b1.x + 65, b1.y + 65, 50, 50, radians(290), radians(610));
+        line(b1.x + 65,b1.y +53,b1.x + 65, b1.y +32);
       }
   }
 }
