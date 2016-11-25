@@ -22,9 +22,9 @@ class Radio
     {
       if(mousePressed == true && count == 0)
       {
-        Song.play();
         count += 1;
-        Song.rewind();
+        Song.play();
+        Song.loop();
       }
       else if(mousePressed == true && count == 1)
       {
