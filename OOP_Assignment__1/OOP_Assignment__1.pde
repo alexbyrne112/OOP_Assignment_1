@@ -11,7 +11,7 @@ void setup()
   a = new Cockpit(); 
   f = new Fuel();
   s = new Speedo();
-  //radio = new Radio();
+  radio = new Radio();
   
   minim = new Minim(this);
   Song = minim.loadFile("technothing.mp3");
@@ -24,7 +24,7 @@ PImage space;
 Cockpit a;
 Fuel f;
 Speedo s;
-//Radio radio;
+Radio radio;
 
 PFont font;
 
@@ -42,7 +42,7 @@ void draw()
   f.update();
   f.render();
   s.render();
-  //radio.display();
+  radio.display();
   Song.play();
   
    for(Radar r:radars)
