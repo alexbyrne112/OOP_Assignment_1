@@ -1,9 +1,9 @@
 class Button
 {
-  float x, y;
+  float x; 
+  float y;
   float bwidth;
   float bheight;
-  String button;
   
   Button()
   {

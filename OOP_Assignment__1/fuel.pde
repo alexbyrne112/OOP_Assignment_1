@@ -1,8 +1,6 @@
 class Fuel
 {
   float x = width - 350;
-  //float r = 200;
-
   void update()
   { 
     textFont(font);
@@ -13,8 +11,7 @@ class Fuel
     {
       x = x - 0.1;
     }
-  }
-  
+  } 
   void render()
   {
     strokeWeight(1);
@@ -24,8 +21,6 @@ class Fuel
     rect(350,100,x - 350,100);
     strokeWeight(4);
     stroke(255);
-    line(x, 75, x, 200);
-    //r -= 0.05;
-    
+    line(x, 75, x, 200);    
   }
 }

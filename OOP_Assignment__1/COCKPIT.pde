@@ -1,6 +1,5 @@
 class Cockpit
 {
-   
   void display()
   {
   strokeWeight(1);  
