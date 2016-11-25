@@ -4,7 +4,7 @@ class Fuel
   void update()
   { 
     textFont(font);
-    textSize(24);
+    textSize(30);
     fill(255);
     text(((int)(map(x,350,width-350,0, 100))) + "%", x - 38, 100 - 40);
     if(x > 350)
@@ -14,6 +14,7 @@ class Fuel
   } 
   void render()
   {
+    
     strokeWeight(1);
     fill(0);
     rect(350,100,width - 700,100);
@@ -21,6 +22,10 @@ class Fuel
     rect(350,100,x - 350,100);
     strokeWeight(4);
     stroke(255);
-    line(x, 75, x, 200);    
+    line(x, 75, x, 200);
+    fill(255);
+    textSize(60);
+    text("FUEL",width / 2 - 130, 170);
   }
+  
 }
