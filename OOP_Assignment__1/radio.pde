@@ -12,5 +12,13 @@ class Radio
     fill(200);
     rect(width - 2*width/3,height - 185 , width / 3, 130);
     rect(b1.x, b1.y, b1.bwidth, b1.bheight);
+    
+    if(mouseX >= b1.x && mouseX < b1.x + b1.bwidth && mouseY >= b1.y && mouseY < b1.y + b1.bheight)
+    {
+      if(mousePressed == true)
+      {
+       
+      }
+    }
   }
 }
