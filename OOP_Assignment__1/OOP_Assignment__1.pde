@@ -13,7 +13,8 @@ void setup()
   s = new Speedo();
   //radio = new Radio();
   
-  
+  minim = new Minim(this);
+  Song = minim.loadFile("technothing.mp3");
   
   radars.add(new Radar(110, 110, 100,0.07f));
  
@@ -27,6 +28,9 @@ Speedo s;
 
 PFont font;
 
+import ddf.minim.*;
+Minim minim;
+AudioPlayer Song;
 
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();
@@ -39,7 +43,7 @@ void draw()
   f.render();
   s.render();
   //radio.display();
-  /*Song.play();*/
+  Song.play();
   
    for(Radar r:radars)
   {
