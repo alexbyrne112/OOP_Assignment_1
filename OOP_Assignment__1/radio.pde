@@ -17,7 +17,7 @@ class Radio
     {
       if(mousePressed == true)
       {
-       
+       Song.play();
       }
     }
   }

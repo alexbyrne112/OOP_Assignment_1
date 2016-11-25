@@ -43,7 +43,6 @@ void draw()
   f.render();
   s.render();
   radio.display();
-  Song.play();
   
    for(Radar r:radars)
   {
