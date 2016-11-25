@@ -1,5 +1,7 @@
 class Radio
 {
+  int count = 0;
+  
   void display()
   {
     Button b1 = new Button();
@@ -15,9 +17,14 @@ class Radio
     
     if(mouseX >= b1.x && mouseX < b1.x + b1.bwidth && mouseY >= b1.y && mouseY < b1.y + b1.bheight)
     {
-      if(mousePressed == true)
+      if(mousePressed == true && count == 0)
       {
        Song.play();
+      }
+      else if(mousePressed == true && count == 1)
+      {
+        Song.pause();
+        Song.rewind();
       }
     }
   }
