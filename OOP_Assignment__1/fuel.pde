@@ -11,6 +11,12 @@ class Fuel
     {
       x = x - 0.1;
     }
+    if(x < 600)
+    {
+      fill(255,200,0);
+      textSize(30);
+      text("warning:\nLOW FUEL",width - 350, 400);
+    }
   } 
   void render()
   { 
@@ -27,7 +33,6 @@ class Fuel
     text("FUEL",width / 2 - 140, 180);
     fill(255);
     textSize(60);
-    text("FUEL",width / 2 - 130, 170);
-    
+    text("FUEL",width / 2 - 130, 170);  
   }
 }
