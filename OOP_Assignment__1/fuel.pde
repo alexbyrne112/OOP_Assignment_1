@@ -11,11 +11,23 @@ class Fuel
     {
       x = x - 0.1;
     }
-    if(x < 600)
+    if(x < 600 && x > 475)
     {
       fill(255,200,0);
       textSize(30);
       text("warning:\nLOW FUEL",width - 350, 400);
+    }
+    if(x < 475 && x > 351)
+    {
+      fill(255,0,0);
+      textSize(30);
+      text("warning:\nLOW FUEL",width - 350, 400);
+    }
+    if(x == 350)
+    {
+      fill(255,0,0);
+      textSize(30);
+      text("warning:\nNO FUEL",width - 350, 400);
     }
   } 
   void render()
