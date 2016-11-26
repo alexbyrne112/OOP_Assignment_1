@@ -24,12 +24,21 @@ class Speedo
     arc(x1,y1,500,500,radians(90),radians(speed));
   } 
   void update()
-  {    
+  {
+    if(speed > 113)
+    {
+     speed -= 0.1; 
+    }
+    
+    
     if(keyPressed == true)
     {
       if(key == 'w')
       {
-       speed += 0.5;
+        if(speed < 156)
+      {
+          speed += 0.5;
+        }
       }
     }
   }
