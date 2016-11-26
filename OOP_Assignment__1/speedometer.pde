@@ -20,7 +20,9 @@ class Speedo
     strokeWeight(10);
     stroke(0,255,0);
     arc(x1,y1,800,800,radians(90),radians(speed));
+    stroke(0,255,255);
     arc(x1,y1,650,650,radians(90),radians(speed));
+    stroke(0,120,255);
     arc(x1,y1,500,500,radians(90),radians(speed));
   } 
   void update()
@@ -29,8 +31,6 @@ class Speedo
     {
      speed -= 0.1; 
     }
-    
-    
     if(keyPressed == true)
     {
       if(key == 'w')
