@@ -4,8 +4,8 @@ class Speedo
   float y1 = -150;
   //float x2 = 0;
   //float y2 = 0;
-  float speed = 126;
-  //max 157 min 90
+  float speed = 113;
+  //max 156 min 113
   void render()
   {
     strokeWeight(3);
@@ -24,12 +24,12 @@ class Speedo
     arc(x1,y1,500,500,radians(90),radians(speed));
   } 
   void update()
-  {
+  {    
     if(keyPressed == true)
     {
       if(key == 'w')
       {
-        
+       speed += 0.5;
       }
     }
   }

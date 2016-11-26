@@ -39,9 +39,13 @@ void draw()
 {
   image(space,0, 0,width,height);
   a.display();
+  
   f.update();
   f.render();
+  
   s.render();
+  s.update();
+  
   radio.display();
   
    for(Radar r:radars)
