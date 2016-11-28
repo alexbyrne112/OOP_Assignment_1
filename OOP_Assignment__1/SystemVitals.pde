@@ -75,7 +75,7 @@ void loadVitals()
     stroke(255);
     rect(70, height - 240, 420, 220);
     
-    float x = 70;
+    float x = 140;
     float y = height - 20;
     int gap = 120;
     
@@ -88,13 +88,19 @@ void loadVitals()
     fill(255);
     text("System Vitals", 80, height - 210);
     
+    Vital v2 = new Vital();
     Vital v = new Vital();
-    for(int i = 0; i < vitals.size(); i++)
+    for(int i = 0; i < vitals.size() - 1; i++)
     {
       v = vitals.get(i);
-      line();
+      v2 = vitals.get(i+1);
+      strokeWeight(4);
+      stroke(random(255), random(255), random(255));
+      line(x, y -v.value, x + gap, y -v2.value);
       x += gap;
     }
+    //line();
+    //line();
   }
   
   
