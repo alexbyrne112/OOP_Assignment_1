@@ -37,7 +37,7 @@ AudioPlayer Song;
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();
 
-
+ArrayList<Vital> vitals = new ArrayList<Vital>();
 
 void draw()
 {
