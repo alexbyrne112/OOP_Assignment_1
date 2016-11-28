@@ -1,7 +1,7 @@
 void setup()
 {
  // noCursor();
-  fullScreen();
+  fullScreen(P3D);
   background(0);
   space = loadImage("assignment_background.jpg");
   warp = loadImage("warp.jpg");
@@ -14,6 +14,7 @@ void setup()
   f = new Fuel();
   s = new Speedo();
   radio = new Radio();
+  g = new Globe();
   
   minim = new Minim(this);
   Song = minim.loadFile("technothing.mp3");
@@ -33,6 +34,7 @@ Cockpit a;
 Fuel f;
 Speedo s;
 Radio radio;
+Globe g;
 
 PFont font;
 
@@ -73,6 +75,7 @@ void draw()
   
   s.render();
   s.update();
+ 
   
   radio.display();
   
@@ -100,4 +103,5 @@ void draw()
   {
     trendGraph();
   }
+   g.planet();
 }

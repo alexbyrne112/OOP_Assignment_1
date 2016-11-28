@@ -8,7 +8,12 @@ class Cockpit
   rect(width-1, height,-width+1,-250,20,20,1,1);
   quad(width/5,height - 250,width/2-200,height - 350,width/2+200,height - 350,width/5*4,height - 250);
   rect(0, 0, width, 200); 
+  pushMatrix();
+  translate(0, 0, + 2);
+  
   arc(-150, -150, 1000, 1000, radians(0), radians(90));
   arc(width + 150,-150, 1000,1000,radians(90),radians(180));
+  popMatrix();
+  //rect(0, 0, width, 200);
   }
 }

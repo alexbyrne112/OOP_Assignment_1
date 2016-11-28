@@ -8,6 +8,8 @@ class Speedo
   //max 156 min 113
   void render()
   {
+     pushMatrix();
+  translate(0, 0, + 2);
     strokeWeight(3);
     stroke(255,0,0);
     line(width -320, 5, width - 290, 5);
@@ -24,6 +26,7 @@ class Speedo
     arc(x1,y1,650,650,radians(90),radians(speed));
     stroke(0,120,255);
     arc(x1,y1,500,500,radians(90),radians(speed));
+    popMatrix();
   } 
   void update()
   {
