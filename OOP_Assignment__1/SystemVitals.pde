@@ -97,12 +97,20 @@ void loadVitals()
       strokeWeight(4);
       stroke(random(255), random(255), random(255));
       line(x, y -v.value, x + gap, y -v2.value);
+      noFill();
+      strokeWeight(2);
+      stroke(5,255,50);
+      ellipse(x,y - v.value,15,15);
       x += gap;
     }
     stroke(random(255), random(255), random(255));
     line(70, y, 140, height - (20 + 98));
     stroke(random(255), random(255), random(255));
     line(x,height - (20 + 86),490,y);
+    noFill();
+    strokeWeight(2);
+    stroke(5,255,50);
+    ellipse(x,height - (20 + 86),15,15);
   }
   
   
