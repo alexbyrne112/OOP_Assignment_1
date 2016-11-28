@@ -52,7 +52,7 @@ void draw()
   
   radio.display();
   
-  
+   barchart();
   
    for(Radar r:radars)
   {
