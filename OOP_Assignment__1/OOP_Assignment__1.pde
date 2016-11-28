@@ -47,7 +47,7 @@ ArrayList<Vital> vitals = new ArrayList<Vital>();
 
 int change = 0;
 float warp_back;
-int background = 1;
+float background = 1;
 
 void draw()
 {
