@@ -99,8 +99,10 @@ void loadVitals()
       line(x, y -v.value, x + gap, y -v2.value);
       x += gap;
     }
-    //line();
-    //line();
+    stroke(random(255), random(255), random(255));
+    line(70, y, 140, height - (20 + 98));
+    stroke(random(255), random(255), random(255));
+    line(x,height - (20 + 86),490,y);
   }
   
   
