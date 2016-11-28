@@ -18,7 +18,7 @@ void setup()
   
   radars.add(new Radar(110, 110, 100,0.07f));
  
-
+  //loadVitals();
 }
 PImage space;
 Cockpit a;
@@ -34,6 +34,8 @@ AudioPlayer Song;
 
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();
+
+//ArrayList<Vital> vitals = new ArrayList<Vital>();
 
 void draw()
 {
