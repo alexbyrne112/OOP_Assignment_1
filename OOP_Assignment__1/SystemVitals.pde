@@ -57,6 +57,16 @@ void loadVitals()
     fill(255);
     text("System Vitals", 80, height - 210);
     
+    textSize(15);
+    text("Engine 1",75,height -130);
+    
+    textSize(15);
+    text("Oxygen",210,height - 130);
+    
+    textSize(15);
+    text("Engine 2",340,height -130);
+    
+    
     Vital v = new Vital();
     for(int i = 0; i < vitals.size(); i++)
     {

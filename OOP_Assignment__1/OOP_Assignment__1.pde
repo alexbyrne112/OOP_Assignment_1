@@ -52,8 +52,8 @@ void draw()
   
   radio.display();
   
-  trendGraph();
-  
+  //trendGraph();
+  barchart();
    for(Radar r:radars)
   {
     r.update();
