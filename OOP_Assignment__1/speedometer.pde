@@ -2,8 +2,6 @@ class Speedo
 {
   float x1 = width + 150;
   float y1 = -150;
-  //float x2 = 0;
-  //float y2 = 0;
   float speed = 113;
   //max 156 min 113
   void render()
@@ -38,13 +36,12 @@ class Speedo
     {
       if(key == 'w')
       {
-        if(speed < 156)
+        if(speed < 156 && noFuel == 0)
       {
           speed += 0.5;
         }
       }
     }
-    
     if(speed >= 153)
     {
       fill(255,200,0);
@@ -52,12 +49,10 @@ class Speedo
       text("warning:\nWARP SPEED",width - 350,320);
       warp_back = 1;
       background = -background;
-    
     }   
     else if(speed < 153)
     {
       warp_back = 0;
-      
     }
   }
 }

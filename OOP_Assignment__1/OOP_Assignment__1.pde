@@ -6,6 +6,7 @@ void setup()
   space = loadImage("assignment_background.jpg");
   warp = loadImage("warp.jpg");
   space2 = loadImage("assignment_background2.jpg");
+  planet = loadImage("planet.jpg");
   smooth(4);
   
   font = loadFont("SimpleTechBold02-48.vlw");
@@ -29,6 +30,7 @@ Table table;
 PImage warp;
 PImage space2;
 PImage space;
+PImage planet;
 
 Cockpit a;
 Fuel f;
@@ -50,6 +52,7 @@ ArrayList<Vital> vitals = new ArrayList<Vital>();
 int change = 0;
 float warp_back;
 float background = 1;
+int noFuel = 0;
 
 void draw()
 {
@@ -104,4 +107,5 @@ void draw()
     trendGraph();
   }
    g.planet();
+   g.updatePlanet();
 }

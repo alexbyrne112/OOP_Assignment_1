@@ -37,7 +37,7 @@ class Radar
       
     }
     pushMatrix();
-    translate(0, 0, + 3);
+    translate(0, 0, + 4);
     stroke(0, 255, 0);
     noFill();
     pushMatrix();

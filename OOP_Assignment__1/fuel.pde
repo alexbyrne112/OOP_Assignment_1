@@ -12,7 +12,7 @@ class Fuel
     popMatrix();
     if(x > 350)
     {
-      x = x - 0.2;
+      x = x - 2;
     }
     if(x < 600 && x > 475)
     {
@@ -26,11 +26,12 @@ class Fuel
       textSize(30);
       text("warning:\nLOW FUEL",width - 350, 400);
     }
-    if(x == 350)
+    if(x <= 350)
     {
       fill(255,0,0);
       textSize(30);
       text("warning:\nNO FUEL",width - 350, 400);
+      noFuel = 1;
     }
   } 
   void render()
