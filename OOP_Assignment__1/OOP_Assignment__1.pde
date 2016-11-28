@@ -19,6 +19,7 @@ void setup()
   radars.add(new Radar(110, 110, 100,0.07f));
  
   loadVitals();
+  
 }
 Table table;
 
@@ -39,8 +40,11 @@ ArrayList<Fuel> fuel = new ArrayList<Fuel>();
 
 ArrayList<Vital> vitals = new ArrayList<Vital>();
 
+int change = 0;
+
 void draw()
 {
+    
   image(space,0, 0,width,height);
   a.display();
   
@@ -53,10 +57,29 @@ void draw()
   radio.display();
   
   //trendGraph();
-  barchart();
+  //barchart();
    for(Radar r:radars)
   {
     r.update();
     r.render();
   } 
+  if(keyPressed == true)
+  {
+    if(key == 'b')
+    {
+      change = 0;
+    }
+    if(key == 't')
+    {
+      change = 1;
+    }
+  }
+  if(change == 0)
+  {
+    barchart();
+  }
+  if(change == 1)
+  {
+    trendGraph();
+  }
 }
