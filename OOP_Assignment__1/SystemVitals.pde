@@ -17,3 +17,19 @@ class Vital
   }
 
 }
+
+
+void loadVitals()
+  {
+    for(TableRow row : table.rows())
+    {
+      Vital v = new Vital();
+      
+      v.information = row.getString("information");
+      v.value = row.getFloat("value");
+      
+      vitals.add(v);
+      
+      println(v.value);
+    }
+  }
