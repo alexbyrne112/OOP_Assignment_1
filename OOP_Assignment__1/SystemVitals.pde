@@ -1,16 +1,19 @@
-//class Vital
-//{
-//  String engine1;
-//  String engine2;
-//  String oxygen;
-//  color colour;
+class Vital
+{
+  String information;
+  float value;
+  color colour;
+
+  Vital(String line)
+  {
+    String[] parts = line.split("\t");
+    information = parts[0];
+    value = Float.parseFloat(parts[1]);
+    colour = color(random(0, 255), random(0, 255), random(0, 255));
+  }
   
-//  Vital(String line)
-//  {
-//    String[] parts = line.split("\t");
-//    engine1 = parts[0];
-//    engine2 = parts[1];
-//    oxygen = parts[2];
-//    colour = color(random(0, 255), random(0, 255), random(0, 255));
-//  }
-//}
+  Vital()
+  {
+  }
+
+}

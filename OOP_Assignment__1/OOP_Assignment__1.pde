@@ -7,7 +7,7 @@ void setup()
   smooth(4);
   
   font = loadFont("SimpleTechBold02-48.vlw");
-  
+  table = loadTable("SystemVitals.tsv", "header");
   a = new Cockpit(); 
   f = new Fuel();
   s = new Speedo();
@@ -18,8 +18,10 @@ void setup()
   
   radars.add(new Radar(110, 110, 100,0.07f));
  
-  //loadVitals();
+  loadVitals();
 }
+Table table;
+
 PImage space;
 Cockpit a;
 Fuel f;
@@ -35,7 +37,7 @@ AudioPlayer Song;
 ArrayList<Radar> radars = new ArrayList<Radar>();
 ArrayList<Fuel> fuel = new ArrayList<Fuel>();
 
-//ArrayList<Vital> vitals = new ArrayList<Vital>();
+
 
 void draw()
 {
@@ -49,6 +51,8 @@ void draw()
   s.update();
   
   radio.display();
+  
+  
   
    for(Radar r:radars)
   {
