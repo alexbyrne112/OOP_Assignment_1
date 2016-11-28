@@ -47,6 +47,13 @@ class Speedo
       fill(255,200,0);
       textSize(30);
       text("warning:\nWARP SPEED",width - 350,320);
+      warp_back = 1;
+       background = background *(-1);
     }   
+    else if(speed < 153)
+    {
+      warp_back = 0;
+     
+    }
   }
 }

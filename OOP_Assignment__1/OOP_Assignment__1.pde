@@ -4,6 +4,8 @@ void setup()
   fullScreen();
   background(0);
   space = loadImage("assignment_background.jpg");
+  warp = loadImage("warp.jpg");
+  space2 = loadImage("assignment_background2.jpg");
   smooth(4);
   
   font = loadFont("SimpleTechBold02-48.vlw");
@@ -23,7 +25,10 @@ void setup()
 }
 Table table;
 
+PImage warp;
+PImage space2;
 PImage space;
+
 Cockpit a;
 Fuel f;
 Speedo s;
@@ -41,11 +46,26 @@ ArrayList<Fuel> fuel = new ArrayList<Fuel>();
 ArrayList<Vital> vitals = new ArrayList<Vital>();
 
 int change = 0;
+float warp_back;
+int background = 1;
 
 void draw()
 {
-    
-  image(space,0, 0,width,height);
+    if(warp_back == 0)
+    {
+      if(background == 1)
+      {
+        image(space,0, 0,width,height);
+      }
+      else if(background == -1)
+      {
+        image(space2,0, 0,width,height);
+      }
+    }
+    else if(warp_back == 1)
+    {
+      image(warp,0, 0,width,height);
+    }
   a.display();
   
   f.update();
@@ -56,9 +76,7 @@ void draw()
   
   radio.display();
   
-  //trendGraph();
-  //barchart();
-   for(Radar r:radars)
+  for(Radar r:radars)
   {
     r.update();
     r.render();
