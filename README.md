@@ -6,13 +6,18 @@ Alex Byrne C15492952
 CONTROLS-- 
 
 't' change graph to a trend graph
+
 'b' change graph to a bar chart
+
 'mouse click' radio button to turn on radio
+
 'mouse over' globe to rotate is X and Y axis.
 
 Youtube Video link    https://www.youtube.com/watch?v=E_LXPEnwLgc&feature=youtu.be
 
-radio song made by Alex Byrne(C15492952) in FL studio.
+
+
+--radio song made by Alex Byrne(C15492952) in FL studio.--
 
 
 
