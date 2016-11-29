@@ -3,8 +3,8 @@ class Fuel
   float x = width - 350;
   void update()
   { 
-     pushMatrix();
-  translate(0, 0, + 4);
+    pushMatrix();
+    translate(0, 0, + 4);
     textFont(font);
     textSize(30);
     fill(255);
@@ -12,7 +12,7 @@ class Fuel
     popMatrix();
     if(x > 350)
     {
-      x = x - 2;
+      x = x - 0.5;
     }
     if(x < 600 && x > 475)
     {
@@ -36,8 +36,8 @@ class Fuel
   } 
   void render()
   { 
-     pushMatrix();
-  translate(0, 0, + 3);
+    pushMatrix();
+    translate(0, 0, + 3);
     strokeWeight(1);
     fill(0);
     rect(350,100,width - 700,100);

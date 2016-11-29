@@ -18,7 +18,6 @@ class Vital
 
 }
 
-
 void loadVitals()
   {
     for(TableRow row : table.rows())
@@ -34,9 +33,6 @@ void loadVitals()
     }
   }
   
-  
-  
-   
   void barchart()
   {
     fill(0);

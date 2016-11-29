@@ -8,7 +8,6 @@ void setup()
   space2 = loadImage("assignment_background2.jpg");
   planet = loadImage("planet.jpg");
   smooth(4);
-  
   font = loadFont("SimpleTechBold02-48.vlw");
   table = loadTable("SystemVitals.tsv", "header");
   a = new Cockpit(); 
@@ -71,6 +70,7 @@ void draw()
     {
       image(warp,0, 0,width,height);
     }
+    
   a.display();
   
   f.update();
@@ -79,7 +79,6 @@ void draw()
   s.render();
   s.update();
  
-  
   radio.display();
   
   for(Radar r:radars)
@@ -107,5 +106,4 @@ void draw()
     trendGraph();
   }
    g.planet();
-   g.updatePlanet();
 }

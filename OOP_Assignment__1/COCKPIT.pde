@@ -14,6 +14,5 @@ class Cockpit
   arc(-150, -150, 1000, 1000, radians(0), radians(90));
   arc(width + 150,-150, 1000,1000,radians(90),radians(180));
   popMatrix();
-  //rect(0, 0, width, 200);
   }
 }

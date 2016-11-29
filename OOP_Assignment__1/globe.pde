@@ -10,7 +10,6 @@ class Globe
   lights();
   ortho();
   translate(width - 300,height - 120);
-  //sphere(100);
   globe = createShape(SPHERE, 100);
   globe.setTexture(planet);
    if(mouseX >= width - 500 && mouseX <= width && mouseY >= height - 400 && mouseY < height)
@@ -22,9 +21,4 @@ class Globe
 
   popMatrix();
  }
- 
- void updatePlanet()
- {
- }
- 
 }

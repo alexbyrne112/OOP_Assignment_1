@@ -21,8 +21,6 @@ class Radio
     textSize(60);
     text("RADIO", width / 2 - 150,height - 198);
     
-
-    
     if(mouseX >= b1.x && mouseX < b1.x + b1.bwidth && mouseY >= b1.y && mouseY < b1.y + b1.bheight)
     {
       if(mousePressed == true && count == 0)
